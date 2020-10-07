@@ -1,0 +1,28 @@
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "@fortawesome/fontawesome-free/css/all.css";
+@import "vue-lazy-youtube-video/dist/style.css";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import "layouts/general";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/home";
+@import "layouts/what";
+@import "layouts/who";
+@import "layouts/where";

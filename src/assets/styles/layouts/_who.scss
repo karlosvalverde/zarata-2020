@@ -1,0 +1,72 @@
+.who {
+  margin-top: 12vh !important;
+  margin-bottom: 12vh !important;
+
+  .is-card {
+    margin: 1vw;
+    transition: .25s;
+    cursor: pointer;
+    
+    h2 {
+      font-weight: lighter;
+    }
+
+    &:hover {
+      background-color: $primary;
+
+      .img-fluid {
+        filter: grayscale(100%);
+      }
+
+      h2 {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.is_active {
+  background-color: $primary;
+  color: $secondary;
+  transition: 1s opacity linear;
+  
+  .img-fluid {
+    filter: grayscale(100%);
+  }
+
+  h2 {
+    color: $secondary;
+  }
+
+  .is-hidden {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+}
+
+.is-grayscale {
+  filter: grayscale(0);
+}
+
+.is-hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 850px) {
+  h2 {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 450px) {
+  h2 {
+    font-size: 5vw;
+  }
+  
+  .w-25 {
+    width: 100% !important;
+  }
+}

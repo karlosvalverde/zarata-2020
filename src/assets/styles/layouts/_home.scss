@@ -1,0 +1,32 @@
+.home {
+  h1 {
+    margin-left: -.5vw;
+  }
+}
+
+.is-big {
+  font-size: 20vw;
+  max-height: 90vh;
+}
+
+.is-secondary {
+  color: $secondary !important;
+}
+
+@media (max-width: 850px) {
+  .home {
+    .is-big {
+      font-size: 15vw;
+      margin-left: -2vw;
+      margin-top: 8vh !important;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .home {
+    .is-big {
+      margin-top: 17vh !important;
+    }
+  }
+}
